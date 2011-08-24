@@ -10,4 +10,7 @@
 	<!-- start nodelet manager -->
   	<node pkg="nodelet" type="nodelet" name="nodelet_manager"  args="manager" output="screen"/>
 
+	<!-- start cartesian arm interface -->
+	<include file="$(find cob_manipulator)/ros/launch/move_cart.launch" />
+
 </launch>
